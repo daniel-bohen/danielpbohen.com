@@ -42,10 +42,24 @@ export default function Projects() {
           <Project title="Pairs Trading Algorithm" text="hello"/>
         </Grid>
         </Grid> */}
-      <Project title="Playlistify: A Spotify Playlist Organizer" text="hello" link="https://github.com/daniel-bohen/playlistify.git" />
-      <Project title="Changepoint Detection & Momentum Trading " text="hello" />
-      <Project title="CS104: Data Structures & Algorithm Projects" text="hello" />
-      <Project title="Pairs Trading Algorithm" text="hello" />
+      <Project 
+      title="Playlistify: A Spotify Playlist Organizer" 
+      text="hello" 
+      link="https://github.com/daniel-bohen/playlistify.git" />
+      <Project 
+      title="Changepoint Detection & Momentum Trading " 
+      text="hello" 
+      link=""
+      />
+      <Project 
+      title="CS104: Data Structures & Algorithm Projects" 
+      text="hello" 
+      link=""/>
+      <Project 
+      title="Pairs Trading Algorithm" 
+      text="hello" 
+      link=""
+      />
 
     </>
   );

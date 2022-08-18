@@ -8,7 +8,7 @@ import { CardActionArea } from '@mui/material';
 export default function Project(props) {
   return (
     <Card>
-      <CardActionArea href={props.link}>
+      <CardActionArea href={props.link} target="_blank">
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {props.title}
