@@ -16,7 +16,7 @@ export default function Home() {
       >
         <Typography variant="h3">Welcome to Daniel Bohen's Personal Website!</Typography>
       </Box>
-      <Typography>Hello</Typography>
+      <Typography>Hello! I am a sophomore engineering student </Typography>
     </>
   );
 }
