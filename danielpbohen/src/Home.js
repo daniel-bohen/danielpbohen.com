@@ -14,9 +14,9 @@ export default function Home() {
         justifyContent="center"
         sx={{ m: 2 }}
       >
-        <Typography variant="h3">Welcome to Daniel Bohen's Personal Website!</Typography>
+        <Typography variant="h3">Daniel Bohen</Typography>
       </Box>
-      <Typography>H ello! I am a sophomore engineering student </Typography>
+      <Typography>Hello! I am a sophomore engineering student </Typography>
     </>
   );
 }

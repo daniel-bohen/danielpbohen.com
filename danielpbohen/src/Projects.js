@@ -28,7 +28,7 @@ export default function Projects() {
       >
         <Typography variant="h3">Projects</Typography>
       </Box>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      {/* <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={6}>
          <Project title="Playlistify: A Spotify Playlist Organizer" text="hello" link="https://github.com/daniel-bohen/playlistify.git"/>
         </Grid>
@@ -41,8 +41,12 @@ export default function Projects() {
         <Grid item xs={6}>
           <Project title="Pairs Trading Algorithm" text="hello"/>
         </Grid>
-        
-      </Grid>
+        </Grid> */}
+      <Project title="Playlistify: A Spotify Playlist Organizer" text="hello" link="https://github.com/daniel-bohen/playlistify.git" />
+      <Project title="Changepoint Detection & Momentum Trading " text="hello" />
+      <Project title="CS104: Data Structures & Algorithm Projects" text="hello" />
+      <Project title="Pairs Trading Algorithm" text="hello" />
+
     </>
   );
 }
