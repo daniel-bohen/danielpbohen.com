@@ -1,14 +1,11 @@
-import { Link, useNavigate } from "react-router-dom";
 import Header from "./components/Header";
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import { Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 import me from "./components/me.jpg";
-import Project from "./components/Project";
-import Job from "./components/Job";
-import Divider from '@mui/material/Divider';
 import Projects from "./Projects";
 import Experience from "./Experience";
+import Publications from "./Publications";
+
 
 export default function Home() {
   return (
@@ -16,18 +13,30 @@ export default function Home() {
       <Header />
       <Box
         display="flex"
-        sx={{ m: 2 }}
       >
-
-        <img src={me} alt="me" width="300" height="auto" />
+     
         <Box
-          sx={{ m: 2 }}
+          sx= {{ 
+          width: '100%',
+          ml: 2,
+          mt: 2, 
+          '@media (max-width: 600px)': {
+            flexDirection: 'column',
+            height: 'auto',
+            alignContent: 'center',
+            justifyContent: 'center',
+            alignItems: 'center',
+
+          }}}
+          display="flex"
         >
-          <Typography variant="h2">Daniel Bohen</Typography>
-          <Typography>
-            Hello! My name is Daniel Bohen, and I am a computer science student interested in intelligent cyber physical systems.
-            My research interests are in machine learning, 
-          </Typography>
+           <img src={me} alt="me" width="300em" height="auto" />
+          <Typography sx={{mb: 2, ml: 2, mr: 2}}variant="h2">Daniel Bohen <Typography>
+            Hello! My name is Daniel Bohen, and I am a computer science student broadly interested in intelligent cyber physical systems. I am currently 
+            working for USC's Dr. Luis Garcia on NeuroIoT, focusing on the development of robust, explainable decision making systems for deep brain stimulation. 
+            I have a strong interest in the intersection of computer science and medicine, and hope to use explainable machine learning methods to facilitate 
+            
+          </Typography></Typography>
         </Box>
       </Box>
       <Box
@@ -37,6 +46,7 @@ export default function Home() {
       >
       <Experience /> 
       <Projects />
+      {/* <Publications /> */}
       </Box>
     </>
   );

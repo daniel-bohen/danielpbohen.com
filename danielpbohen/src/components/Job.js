@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 export default function Job(props) {
   return (
     <>
-      <Box sx={{mt: 2, mb: 1}}>
+      <Box sx={{mt: 2, mb: -2}}>
         <Typography variant="h5" component="div">
           <u>{props.title}</u>
         </Typography>
@@ -19,12 +19,15 @@ export default function Job(props) {
           </Grid>
         </Grid>
       </Box>
-      {/* map items from props.description to each line */}
+      <ul>
       {props.description.map((line) => (
-        <Typography variant="body1" component="div">
+        <li>
+          <Typography variant="body1" component="div">
           {line}
         </Typography>
+        </li>
       ))}
+      </ul>
     </>
   );
 }

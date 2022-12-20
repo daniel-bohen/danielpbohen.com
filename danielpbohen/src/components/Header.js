@@ -13,8 +13,9 @@ import MenuItem from '@mui/material/MenuItem';
 
 const links = [
   { to: '/', text: 'Home' },
-  { to: "/Resume", text: 'Resume' },
-  { to: "/CV", text: 'CV' },
+  { to: "/daniel_bohen_resume.pdf", text: 'Resume' },
+  { to: "https://github.com/daniel-bohen", text: 'Github' },
+  // { to: "/daniel_bohen_cv.pdf", text: 'CV' },
 ]
 
 function Header() {
@@ -43,10 +44,10 @@ function Header() {
           <Toolbar disableGutters>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {links.map((link) => (
-                  <Link style={{ textDecoration: 'none' }} to={link.to}> <Button sx={{ my: 2, color: 'white', display: 'block' }}>{link.text}</Button></Link>
+                  <Button component="a" href={link.to} sx={{ my: 2, color: 'white', display: 'block' }}>{link.text}</Button>
               ))}
             </Box>
-            <Box sx={{ flexGrow: 0 }}>
+            <Box sx={{ flexGrow: 0 }}> 
               <Tooltip title="Open settings">
                 <IconButton
                   size="large"
