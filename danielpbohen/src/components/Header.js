@@ -13,10 +13,8 @@ import MenuItem from '@mui/material/MenuItem';
 
 const links = [
   { to: '/', text: 'Home' },
-  { to: "/experience", text: 'experience' },
-  { to: "/projects", text: 'Projects' },
-  // { to: "/research", text: 'Research' },
-  // { to: "/blog", text: 'Blog' }
+  { to: "/Resume", text: 'Resume' },
+  { to: "/CV", text: 'CV' },
 ]
 
 function Header() {

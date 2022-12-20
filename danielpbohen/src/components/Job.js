@@ -1,22 +1,30 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
-export default function Project(props) {
+export default function Job(props) {
   return (
-    <Card>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {props.title}{ }{props.dates}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {props.employer}
-          </Typography>
-        <Typography variant="body2" color="text.secondary">
-            {props.description}
-          </Typography>
-        </CardContent>
-    </Card>
+    <>
+      <Box sx={{mt: 2, mb: 1}}>
+        <Typography variant="h5" component="div">
+          <u>{props.title}</u>
+        </Typography>
+        <Grid container justifyContent="space-between" direction="row">
+          <Grid item>
+            <i>{props.employer}</i>
+          </Grid>
+          <Grid item>
+            <i>{props.dates}</i>
+          </Grid>
+        </Grid>
+      </Box>
+      {/* map items from props.description to each line */}
+      {props.description.map((line) => (
+        <Typography variant="body1" component="div">
+          {line}
+        </Typography>
+      ))}
+    </>
   );
 }
